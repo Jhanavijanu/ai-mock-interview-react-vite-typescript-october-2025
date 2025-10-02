@@ -1,14 +1,17 @@
 React + TypeScript + Vite
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
 @vitejs/plugin-react uses Babel for Fast Refresh
 @vitejs/plugin-react-swc uses SWC for Fast Refresh
+
 Expanding the ESLint configuration
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
 Configure the top-level parserOptions property like this:
+
 export default tseslint.config({
   languageOptions: {
     // other options...
@@ -18,9 +21,13 @@ export default tseslint.config({
     },
   },
 })
+
+
 Replace tseslint.configs.recommended to tseslint.configs.recommendedTypeChecked or tseslint.configs.strictTypeChecked
 Optionally add ...tseslint.configs.stylisticTypeChecked
 Install eslint-plugin-react and update the config:
+
+
 // eslint.config.js
 import react from 'eslint-plugin-react'
 
